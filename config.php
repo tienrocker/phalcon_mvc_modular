@@ -20,7 +20,9 @@ if (!file_exists(APP_PATH . '/vendor/autoload.php')) {
  */
 include APP_PATH . '/vendor/autoload.php';
 
-
+/**
+ * Detect environment config
+ */
 if (!defined('ENVIRONMENT')) {
     if (preg_match('/(.*?)\.(admin|dev|local|localhost)$/', $_SERVER['HTTP_HOST']) || in_array($_SERVER['HTTP_HOST'], array('localhost', '127.0.0.1'))) {
         define('ENVIRONMENT', 'development');
@@ -31,10 +33,15 @@ if (!defined('ENVIRONMENT')) {
     }
 }
 
-/** Server variable */
+/**
+ * Server variable
+ */
 if (ENVIRONMENT != 'production' || in_array($_SERVER['REMOTE_ADDR'], $debug_ips)) {
     ini_set('display_errors', true);
     error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE);
 }
 
+/**
+ * Get real config by environment
+ */
 return include BASE_PATH . '/config/config.php';

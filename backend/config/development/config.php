@@ -2,7 +2,7 @@
 
 return array(
     'application' => array(
-        'baseUri' => '/phalcon/backend_public',
+        'baseUri' => '/phalcon/backend_public/',
         'debug' => true,
     )
 );

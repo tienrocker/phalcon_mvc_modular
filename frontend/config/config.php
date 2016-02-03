@@ -20,6 +20,8 @@ $config = new \Phalcon\Config(array(
 
         'migrationsDir' => APP_PATH . '/migrations/',
         'cacheDir' => APP_PATH . '/cache/',
+
+        'staticUri' => '/phalcon/',
     )
 ));
 

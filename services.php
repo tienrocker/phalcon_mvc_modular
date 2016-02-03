@@ -23,7 +23,7 @@ $di = new FactoryDefault();
 $di->setShared('url', function () use ($config) {
     $url = new UrlResolver();
     $url->setBaseUri($config->application->baseUri);
-
+    $url->setStaticBaseUri($config->application->staticUri);
     return $url;
 });
 
@@ -66,6 +66,16 @@ $di->setShared('db', function () use ($config) {
 
     return new $class($dbConfig);
 });
+
+/**
+ * Registering the Models-Metadata
+ */
+$di->set('modelsMetadata', 'Phalcon\Mvc\Model\Metadata\Files');
+
+/*
+ * Registering the Models Manager
+ */
+$di->set('modelsManager', 'Phalcon\Mvc\Model\Manager');
 
 /**
  * If the configuration specify the use of metadata adapter use it or use memory otherwise
