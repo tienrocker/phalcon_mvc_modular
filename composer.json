@@ -1,0 +1,16 @@
+{
+    "name": "tienrocker/phalcon",
+    "description": "phalcon project",
+    "type": "project, php, module",
+    "require": {
+        "predis/predis": "^1.0",
+        "phpoffice/phpexcel": "^1.8"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tien Tran",
+            "email": "tienrocker@gmail.com"
+        }
+    ]
+}
