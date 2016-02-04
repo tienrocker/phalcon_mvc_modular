@@ -4,6 +4,7 @@ $loader = new \Phalcon\Loader();
 
 $loader->registerNamespaces(
     array(
+        'Phalcon' => APP_PATH . '/vendor/phalcon/incubator/Library/Phalcon/',
         ucfirst(BASE_NAME) . '\\Controllers' => $config->application->controllersDir,
     )
 );

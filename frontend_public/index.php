@@ -6,31 +6,29 @@ define('APP_PATH', realpath('..'));
 define('BASE_NAME', 'frontend');
 define('BASE_PATH', APP_PATH . DIRECTORY_SEPARATOR . BASE_NAME);
 
-try {
+/**
+ * Read the configuration
+ */
+$config = include APP_PATH . "/config.php";
 
-    /**
-     * Read the configuration
-     */
-    $config = include APP_PATH . "/config.php";
+/**
+ * Read auto-loader
+ */
+include APP_PATH . "/loader.php";
 
-    /**
-     * Read auto-loader
-     */
-    include APP_PATH . "/loader.php";
+/**
+ * Read services
+ */
+include APP_PATH . "/services.php";
 
-    /**
-     * Read services
-     */
-    include APP_PATH . "/services.php";
+new \Snowair\Debugbar\Whoops\WhoopsServiceProvider();
 
-    /**
-     * Handle the request
-     */
-    $application = new \Phalcon\Mvc\Application($di);
+/**
+ * Handle the request
+ */
+$application = new \Phalcon\Mvc\Application($di);
 
-    echo $application->handle()->getContent();
+$di['app'] = $application;
+(new Snowair\Debugbar\ServiceProvider())->start();
 
-} catch (\Exception $e) {
-    echo $e->getMessage() . '<br>';
-    echo '<pre>' . $e->getTraceAsString() . '</pre>';
-}
+echo $application->handle()->getContent();

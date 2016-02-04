@@ -1,16 +1,32 @@
 {
-    "name": "tienrocker/phalcon",
-    "description": "phalcon project",
-    "type": "project, php, module",
-    "require": {
-        "predis/predis": "^1.0",
-        "phpoffice/phpexcel": "^1.8"
-    },
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Tien Tran",
-            "email": "tienrocker@gmail.com"
-        }
-    ]
+  "name": "tienrocker/phalcon",
+  "description": "phalcon project",
+  "type": "project, php, module",
+  "minimum-stability": "dev",
+  "prefer-stable" : true,
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@github.com:tienrocker/pauthentication.git"
+    }
+  ],
+  "require": {
+    "phalcon/incubator": "^2.0",
+    "predis/predis": "^1.0",
+    "phpoffice/phpexcel": "^1.8",
+    "hybridauth/hybridauth": "^2.6",
+    "phpmailer/phpmailer": "~5.2",
+    "tienrocker/pauthentication": "*",
+    "filp/whoops": "1.*"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Tien Tran",
+      "email": "tienrocker@gmail.com"
+    }
+  ],
+  "require-dev": {
+    "snowair/phalcon-debugbar": "^1.1"
+  }
 }

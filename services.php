@@ -18,6 +18,11 @@ use Phalcon\Session\Adapter\Files as SessionAdapter;
 $di = new FactoryDefault();
 
 /**
+ * Set router for rewrite url
+ */
+$di->setShared('router', include __DIR__ . '/routers.php');
+
+/**
  * The URL component is used to generate all kind of urls in the application
  */
 $di->setShared('url', function () use ($config) {
@@ -114,3 +119,10 @@ $di->set('dispatcher', function () {
     $dispatcher->setDefaultNamespace(ucfirst(BASE_NAME) . '\\Controllers');
     return $dispatcher;
 });
+
+/**
+ * Custom tag
+ */
+$di->set('tag', function () use ($config) {
+    return new Tag();
+}, true);

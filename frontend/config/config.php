@@ -17,6 +17,7 @@ $config = new \Phalcon\Config(array(
         'modelsDir' => APP_PATH . '/models/',
         'pluginsDir' => APP_PATH . '/plugins/',
         'libraryDir' => APP_PATH . '/library/',
+        'langDir' => APP_PATH . '/lang/',
 
         'migrationsDir' => APP_PATH . '/migrations/',
         'cacheDir' => APP_PATH . '/cache/',

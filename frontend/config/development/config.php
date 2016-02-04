@@ -2,7 +2,7 @@
 
 return array(
     'application' => array(
-        'baseUri' => '/phalcon/',
+        'baseUri' => 'http://tientm.sdev.local/phalcon/',
         'debug' => true,
     )
 );

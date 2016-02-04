@@ -1,0 +1,515 @@
+INFO -- 127.0.0.1 -- 2016-02-04T06:01:59+00:00 -- Enter Hybrid_Auth::initialize()
+INFO -- 127.0.0.1 -- 2016-02-04T06:01:59+00:00 -- Hybrid_Auth::initialize(). PHP version: 5.6.15
+INFO -- 127.0.0.1 -- 2016-02-04T06:01:59+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth version: 2.6.0
+INFO -- 127.0.0.1 -- 2016-02-04T06:01:59+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth called from: http://tientm.sdev.local/phalcon/login/index/twitter
+INFO -- 127.0.0.1 -- 2016-02-04T06:01:59+00:00 -- Hybrid_Auth initialize: check if any error is stored on the endpoint...
+INFO -- 127.0.0.1 -- 2016-02-04T06:01:59+00:00 -- Hybrid_Auth initialize: no error found. initialization succeed.
+INFO -- 127.0.0.1 -- 2016-02-04T06:01:59+00:00 -- Enter Hybrid_Auth::authenticate( Twitter )
+INFO -- 127.0.0.1 -- 2016-02-04T06:01:59+00:00 -- Hybrid_Auth::authenticate( Twitter ), User not connected to the provider. Try to authenticate..
+INFO -- 127.0.0.1 -- 2016-02-04T06:01:59+00:00 -- Hybrid_Auth::setup( Twitter ), no stored params found for this provider. Initialize a new one for new session
+INFO -- 127.0.0.1 -- 2016-02-04T06:01:59+00:00 -- Enter Hybrid_Provider_Adapter::factory( Twitter )
+INFO -- 127.0.0.1 -- 2016-02-04T06:01:59+00:00 -- Enter Hybrid_Provider_Adapter::login( Twitter ) 
+INFO -- 127.0.0.1 -- 2016-02-04T06:01:59+00:00 -- Enter [Twitter]::logout()
+INFO -- 127.0.0.1 -- 2016-02-04T06:01:59+00:00 -- Enter Hybrid_Auth::redirect( /phalcon//login/index/twitter?hauth.start=Twitter&hauth.time=1454565719, PHP )
+INFO -- 127.0.0.1 -- 2016-02-04T06:01:59+00:00 -- Enter Hybrid_Auth::initialize()
+INFO -- 127.0.0.1 -- 2016-02-04T06:01:59+00:00 -- Hybrid_Auth::initialize(). PHP version: 5.6.15
+INFO -- 127.0.0.1 -- 2016-02-04T06:01:59+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth version: 2.6.0
+INFO -- 127.0.0.1 -- 2016-02-04T06:01:59+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth called from: http://tientm.sdev.local/phalcon//login/index/twitter?hauth.start=Twitter&hauth.time=1454565719
+INFO -- 127.0.0.1 -- 2016-02-04T06:01:59+00:00 -- Hybrid_Auth initialize: check if any error is stored on the endpoint...
+INFO -- 127.0.0.1 -- 2016-02-04T06:01:59+00:00 -- Hybrid_Auth initialize: no error found. initialization succeed.
+INFO -- 127.0.0.1 -- 2016-02-04T06:01:59+00:00 -- Enter Hybrid_Auth::initialize()
+INFO -- 127.0.0.1 -- 2016-02-04T06:01:59+00:00 -- Hybrid_Auth::initialize(). PHP version: 5.6.15
+INFO -- 127.0.0.1 -- 2016-02-04T06:01:59+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth version: 2.6.0
+INFO -- 127.0.0.1 -- 2016-02-04T06:01:59+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth called from: http://tientm.sdev.local/phalcon//login/index/twitter?hauth.start=Twitter&hauth.time=1454565719
+INFO -- 127.0.0.1 -- 2016-02-04T06:01:59+00:00 -- Hybrid_Auth initialize: check if any error is stored on the endpoint...
+INFO -- 127.0.0.1 -- 2016-02-04T06:01:59+00:00 -- Hybrid_Auth initialize: no error found. initialization succeed.
+INFO -- 127.0.0.1 -- 2016-02-04T06:01:59+00:00 -- Enter Hybrid_Provider_Adapter::factory( Twitter )
+INFO -- 127.0.0.1 -- 2016-02-04T06:01:59+00:00 -- Endpoint: call adapter [Twitter] loginBegin()
+INFO -- 127.0.0.1 -- 2016-02-04T06:01:59+00:00 -- Enter OAuth1Client::request( GET, https://api.twitter.com/oauth/request_token?oauth_callback=%2Fphalcon%2F%2Flogin%2Findex%2Ftwitter%3Fhauth.done%3DTwitter&oauth_consumer_key=P2jMTnLezgImXItXUwpoxtVj1&oauth_nonce=73a9857661f8c80eea822effeecdd2db&oauth_signature=RYAglGZhdd5nXQEjX%2FdPv3cuzJQ%3D&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1454565719&oauth_version=1.0 )
+ERROR -- 127.0.0.1 -- 2016-02-04T06:02:00+00:00 -- Exception:Authentication failed! Twitter returned an error. 401 Unauthorized. -- Exception Object
+(
+    [message:protected] => Authentication failed! Twitter returned an error. 401 Unauthorized.
+    [string:Exception:private] => 
+    [code:protected] => 5
+    [file:protected] => D:\xampp\htdocs\phalcon\vendor\hybridauth\hybridauth\hybridauth\Hybrid\Providers\Twitter.php
+    [line:protected] => 60
+    [trace:Exception:private] => Array
+        (
+            [0] => Array
+                (
+                    [file] => D:\xampp\htdocs\phalcon\vendor\hybridauth\hybridauth\hybridauth\Hybrid\Endpoint.php
+                    [line] => 140
+                    [function] => loginBegin
+                    [class] => Hybrid_Providers_Twitter
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [file] => D:\xampp\htdocs\phalcon\vendor\hybridauth\hybridauth\hybridauth\Hybrid\Endpoint.php
+                    [line] => 51
+                    [function] => processAuthStart
+                    [class] => Hybrid_Endpoint
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [file] => D:\xampp\htdocs\phalcon\vendor\hybridauth\hybridauth\hybridauth\Hybrid\Endpoint.php
+                    [line] => 72
+                    [function] => __construct
+                    [class] => Hybrid_Endpoint
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => 
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [file] => D:\xampp\htdocs\phalcon\vendor\tienrocker\pauthentication\src\controllers\auth.php
+                    [line] => 63
+                    [function] => process
+                    [class] => Hybrid_Endpoint
+                    [type] => ::
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [file] => D:\xampp\htdocs\phalcon\vendor\tienrocker\pauthentication\src\controllers\auth.php
+                    [line] => 19
+                    [function] => hybrid
+                    [class] => TienRocker\Auth\Controllers\Auth
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => twitter
+                        )
+
+                )
+
+            [5] => Array
+                (
+                    [file] => D:\xampp\htdocs\phalcon\frontend\controllers\LoginController.php
+                    [line] => 20
+                    [function] => login
+                    [class] => TienRocker\Auth\Controllers\Auth
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => twitter
+                        )
+
+                )
+
+            [6] => Array
+                (
+                    [function] => indexAction
+                    [class] => Frontend\Controllers\LoginController
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => twitter
+                        )
+
+                )
+
+            [7] => Array
+                (
+                    [function] => dispatch
+                    [class] => Phalcon\Dispatcher
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [8] => Array
+                (
+                    [file] => D:\xampp\htdocs\phalcon\frontend_public\index.php
+                    [line] => 31
+                    [function] => handle
+                    [class] => Phalcon\Mvc\Application
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+        )
+
+    [previous:Exception:private] => 
+)
+
+INFO -- 127.0.0.1 -- 2016-02-04T06:02:00+00:00 -- Enter Hybrid_Error::setError( Authentication failed! Twitter returned an error. 401 Unauthorized. )
+INFO -- 127.0.0.1 -- 2016-02-04T06:02:00+00:00 -- Enter Hybrid_Auth::redirect( http://tientm.sdev.local/phalcon/login/index/twitter, PHP )
+INFO -- 127.0.0.1 -- 2016-02-04T06:02:00+00:00 -- Enter Hybrid_Auth::initialize()
+INFO -- 127.0.0.1 -- 2016-02-04T06:02:00+00:00 -- Hybrid_Auth::initialize(). PHP version: 5.6.15
+INFO -- 127.0.0.1 -- 2016-02-04T06:02:00+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth version: 2.6.0
+INFO -- 127.0.0.1 -- 2016-02-04T06:02:00+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth called from: http://tientm.sdev.local/phalcon/login/index/twitter
+INFO -- 127.0.0.1 -- 2016-02-04T06:02:00+00:00 -- Hybrid_Auth initialize: check if any error is stored on the endpoint...
+ERROR -- 127.0.0.1 -- 2016-02-04T06:02:00+00:00 -- Hybrid_Auth initialize: A stored Error found, Throw an new Exception and delete it from the store: Error#5, 'Authentication failed! Twitter returned an error. 401 Unauthorized.' -- 
+INFO -- 127.0.0.1 -- 2016-02-04T06:02:00+00:00 -- Enter Hybrid_Error::clearError()
+INFO -- 127.0.0.1 -- 2016-02-04T06:02:39+00:00 -- Enter Hybrid_Auth::initialize()
+INFO -- 127.0.0.1 -- 2016-02-04T06:02:39+00:00 -- Hybrid_Auth::initialize(). PHP version: 5.6.15
+INFO -- 127.0.0.1 -- 2016-02-04T06:02:39+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth version: 2.6.0
+INFO -- 127.0.0.1 -- 2016-02-04T06:02:39+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth called from: http://tientm.sdev.local/phalcon/login/index/twitter
+INFO -- 127.0.0.1 -- 2016-02-04T06:02:39+00:00 -- Hybrid_Auth initialize: check if any error is stored on the endpoint...
+INFO -- 127.0.0.1 -- 2016-02-04T06:02:39+00:00 -- Hybrid_Auth initialize: no error found. initialization succeed.
+INFO -- 127.0.0.1 -- 2016-02-04T06:02:53+00:00 -- Enter Hybrid_Auth::initialize()
+INFO -- 127.0.0.1 -- 2016-02-04T06:02:53+00:00 -- Hybrid_Auth::initialize(). PHP version: 5.6.15
+INFO -- 127.0.0.1 -- 2016-02-04T06:02:53+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth version: 2.6.0
+INFO -- 127.0.0.1 -- 2016-02-04T06:02:53+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth called from: http://tientm.sdev.local/phalcon/login/index/twitter
+INFO -- 127.0.0.1 -- 2016-02-04T06:02:53+00:00 -- Hybrid_Auth initialize: check if any error is stored on the endpoint...
+INFO -- 127.0.0.1 -- 2016-02-04T06:02:53+00:00 -- Hybrid_Auth initialize: no error found. initialization succeed.
+INFO -- 127.0.0.1 -- 2016-02-04T06:02:56+00:00 -- Enter Hybrid_Auth::initialize()
+INFO -- 127.0.0.1 -- 2016-02-04T06:02:56+00:00 -- Hybrid_Auth::initialize(). PHP version: 5.6.15
+INFO -- 127.0.0.1 -- 2016-02-04T06:02:56+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth version: 2.6.0
+INFO -- 127.0.0.1 -- 2016-02-04T06:02:56+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth called from: http://tientm.sdev.local/phalcon/login/index/twitter
+INFO -- 127.0.0.1 -- 2016-02-04T06:02:56+00:00 -- Hybrid_Auth initialize: check if any error is stored on the endpoint...
+INFO -- 127.0.0.1 -- 2016-02-04T06:02:56+00:00 -- Hybrid_Auth initialize: no error found. initialization succeed.
+INFO -- 127.0.0.1 -- 2016-02-04T06:03:54+00:00 -- Enter Hybrid_Auth::initialize()
+INFO -- 127.0.0.1 -- 2016-02-04T06:03:54+00:00 -- Hybrid_Auth::initialize(). PHP version: 5.6.15
+INFO -- 127.0.0.1 -- 2016-02-04T06:03:54+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth version: 2.6.0
+INFO -- 127.0.0.1 -- 2016-02-04T06:03:54+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth called from: http://tientm.sdev.local/phalcon/login/index/twitter
+INFO -- 127.0.0.1 -- 2016-02-04T06:03:54+00:00 -- Hybrid_Auth initialize: check if any error is stored on the endpoint...
+INFO -- 127.0.0.1 -- 2016-02-04T06:03:54+00:00 -- Hybrid_Auth initialize: no error found. initialization succeed.
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:30+00:00 -- Enter Hybrid_Auth::initialize()
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:30+00:00 -- Hybrid_Auth::initialize(). PHP version: 5.6.15
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:30+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth version: 2.6.0
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:30+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth called from: http://tientm.sdev.local/phalcon/login/index/twitter
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:30+00:00 -- Hybrid_Auth initialize: check if any error is stored on the endpoint...
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:30+00:00 -- Hybrid_Auth initialize: no error found. initialization succeed.
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:39+00:00 -- Enter Hybrid_Auth::initialize()
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:39+00:00 -- Hybrid_Auth::initialize(). PHP version: 5.6.15
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:39+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth version: 2.6.0
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:39+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth called from: http://tientm.sdev.local/phalcon/login/index/twitter
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:39+00:00 -- Hybrid_Auth initialize: check if any error is stored on the endpoint...
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:39+00:00 -- Hybrid_Auth initialize: no error found. initialization succeed.
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:42+00:00 -- Enter Hybrid_Auth::initialize()
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:42+00:00 -- Hybrid_Auth::initialize(). PHP version: 5.6.15
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:42+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth version: 2.6.0
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:42+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth called from: http://tientm.sdev.local/phalcon/login/index/twitter
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:42+00:00 -- Hybrid_Auth initialize: check if any error is stored on the endpoint...
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:42+00:00 -- Hybrid_Auth initialize: no error found. initialization succeed.
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:42+00:00 -- Enter Hybrid_Auth::authenticate( Twitter )
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:42+00:00 -- Hybrid_Auth::authenticate( Twitter ), User not connected to the provider. Try to authenticate..
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:42+00:00 -- Hybrid_Auth::setup( Twitter ), no stored params found for this provider. Initialize a new one for new session
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:42+00:00 -- Enter Hybrid_Provider_Adapter::factory( Twitter )
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:43+00:00 -- Enter Hybrid_Provider_Adapter::login( Twitter ) 
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:43+00:00 -- Enter [Twitter]::logout()
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:43+00:00 -- Enter Hybrid_Auth::redirect( http://tientm.sdev.local/phalcon//login/index/twitter?hauth.start=Twitter&hauth.time=1454565883, PHP )
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:43+00:00 -- Enter Hybrid_Auth::initialize()
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:43+00:00 -- Hybrid_Auth::initialize(). PHP version: 5.6.15
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:43+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth version: 2.6.0
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:43+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth called from: http://tientm.sdev.local/phalcon//login/index/twitter?hauth.start=Twitter&hauth.time=1454565883
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:43+00:00 -- Hybrid_Auth initialize: check if any error is stored on the endpoint...
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:43+00:00 -- Hybrid_Auth initialize: no error found. initialization succeed.
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:43+00:00 -- Enter Hybrid_Auth::initialize()
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:43+00:00 -- Hybrid_Auth::initialize(). PHP version: 5.6.15
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:43+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth version: 2.6.0
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:43+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth called from: http://tientm.sdev.local/phalcon//login/index/twitter?hauth.start=Twitter&hauth.time=1454565883
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:43+00:00 -- Hybrid_Auth initialize: check if any error is stored on the endpoint...
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:43+00:00 -- Hybrid_Auth initialize: no error found. initialization succeed.
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:43+00:00 -- Enter Hybrid_Provider_Adapter::factory( Twitter )
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:43+00:00 -- Endpoint: call adapter [Twitter] loginBegin()
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:43+00:00 -- Enter OAuth1Client::request( GET, https://api.twitter.com/oauth/request_token?oauth_callback=http%3A%2F%2Ftientm.sdev.local%2Fphalcon%2F%2Flogin%2Findex%2Ftwitter%3Fhauth.done%3DTwitter&oauth_consumer_key=P2jMTnLezgImXItXUwpoxtVj1&oauth_nonce=d643065f96d116f0c6e85167ba1806ef&oauth_signature=Vahm9hXmyUmu4BFJrveQhsy%2B%2Fwo%3D&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1454565883&oauth_version=1.0 )
+ERROR -- 127.0.0.1 -- 2016-02-04T06:04:44+00:00 -- Exception:Authentication failed! Twitter returned an error. 401 Unauthorized. -- Exception Object
+(
+    [message:protected] => Authentication failed! Twitter returned an error. 401 Unauthorized.
+    [string:Exception:private] => 
+    [code:protected] => 5
+    [file:protected] => D:\xampp\htdocs\phalcon\vendor\hybridauth\hybridauth\hybridauth\Hybrid\Providers\Twitter.php
+    [line:protected] => 60
+    [trace:Exception:private] => Array
+        (
+            [0] => Array
+                (
+                    [file] => D:\xampp\htdocs\phalcon\vendor\hybridauth\hybridauth\hybridauth\Hybrid\Endpoint.php
+                    [line] => 140
+                    [function] => loginBegin
+                    [class] => Hybrid_Providers_Twitter
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [file] => D:\xampp\htdocs\phalcon\vendor\hybridauth\hybridauth\hybridauth\Hybrid\Endpoint.php
+                    [line] => 51
+                    [function] => processAuthStart
+                    [class] => Hybrid_Endpoint
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [file] => D:\xampp\htdocs\phalcon\vendor\hybridauth\hybridauth\hybridauth\Hybrid\Endpoint.php
+                    [line] => 72
+                    [function] => __construct
+                    [class] => Hybrid_Endpoint
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => 
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [file] => D:\xampp\htdocs\phalcon\vendor\tienrocker\pauthentication\src\controllers\auth.php
+                    [line] => 63
+                    [function] => process
+                    [class] => Hybrid_Endpoint
+                    [type] => ::
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [file] => D:\xampp\htdocs\phalcon\vendor\tienrocker\pauthentication\src\controllers\auth.php
+                    [line] => 19
+                    [function] => hybrid
+                    [class] => TienRocker\Auth\Controllers\Auth
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => twitter
+                        )
+
+                )
+
+            [5] => Array
+                (
+                    [file] => D:\xampp\htdocs\phalcon\frontend\controllers\LoginController.php
+                    [line] => 20
+                    [function] => login
+                    [class] => TienRocker\Auth\Controllers\Auth
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => twitter
+                        )
+
+                )
+
+            [6] => Array
+                (
+                    [function] => indexAction
+                    [class] => Frontend\Controllers\LoginController
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => twitter
+                        )
+
+                )
+
+            [7] => Array
+                (
+                    [function] => dispatch
+                    [class] => Phalcon\Dispatcher
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [8] => Array
+                (
+                    [file] => D:\xampp\htdocs\phalcon\frontend_public\index.php
+                    [line] => 31
+                    [function] => handle
+                    [class] => Phalcon\Mvc\Application
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+        )
+
+    [previous:Exception:private] => 
+)
+
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:44+00:00 -- Enter Hybrid_Error::setError( Authentication failed! Twitter returned an error. 401 Unauthorized. )
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:44+00:00 -- Enter Hybrid_Auth::redirect( http://tientm.sdev.local/phalcon/login/index/twitter, PHP )
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:44+00:00 -- Enter Hybrid_Auth::initialize()
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:44+00:00 -- Hybrid_Auth::initialize(). PHP version: 5.6.15
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:44+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth version: 2.6.0
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:44+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth called from: http://tientm.sdev.local/phalcon/login/index/twitter
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:44+00:00 -- Hybrid_Auth initialize: check if any error is stored on the endpoint...
+ERROR -- 127.0.0.1 -- 2016-02-04T06:04:44+00:00 -- Hybrid_Auth initialize: A stored Error found, Throw an new Exception and delete it from the store: Error#5, 'Authentication failed! Twitter returned an error. 401 Unauthorized.' -- 
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:44+00:00 -- Enter Hybrid_Error::clearError()
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:55+00:00 -- Enter Hybrid_Auth::initialize()
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:55+00:00 -- Hybrid_Auth::initialize(). PHP version: 5.6.15
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:55+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth version: 2.6.0
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:55+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth called from: http://tientm.sdev.local/phalcon/login/index/facebook
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:55+00:00 -- Hybrid_Auth initialize: check if any error is stored on the endpoint...
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:55+00:00 -- Hybrid_Auth initialize: no error found. initialization succeed.
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:55+00:00 -- Enter Hybrid_Auth::authenticate( Facebook )
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:55+00:00 -- Hybrid_Auth::authenticate( Facebook ), User not connected to the provider. Try to authenticate..
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:55+00:00 -- Hybrid_Auth::setup( Facebook ), no stored params found for this provider. Initialize a new one for new session
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:55+00:00 -- Enter Hybrid_Provider_Adapter::factory( Facebook )
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:55+00:00 -- Enter Hybrid_Provider_Adapter::login( Facebook ) 
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:55+00:00 -- Enter [Facebook]::logout()
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:55+00:00 -- Enter Hybrid_Auth::redirect( http://tientm.sdev.local/phalcon//login/index/facebook?hauth.start=Facebook&hauth.time=1454565895, PHP )
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:55+00:00 -- Enter Hybrid_Auth::initialize()
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:55+00:00 -- Hybrid_Auth::initialize(). PHP version: 5.6.15
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:55+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth version: 2.6.0
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:55+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth called from: http://tientm.sdev.local/phalcon//login/index/facebook?hauth.start=Facebook&hauth.time=1454565895
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:55+00:00 -- Hybrid_Auth initialize: check if any error is stored on the endpoint...
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:55+00:00 -- Hybrid_Auth initialize: no error found. initialization succeed.
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:55+00:00 -- Enter Hybrid_Auth::initialize()
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:55+00:00 -- Hybrid_Auth::initialize(). PHP version: 5.6.15
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:55+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth version: 2.6.0
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:55+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth called from: http://tientm.sdev.local/phalcon//login/index/facebook?hauth.start=Facebook&hauth.time=1454565895
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:55+00:00 -- Hybrid_Auth initialize: check if any error is stored on the endpoint...
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:55+00:00 -- Hybrid_Auth initialize: no error found. initialization succeed.
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:55+00:00 -- Enter Hybrid_Provider_Adapter::factory( Facebook )
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:55+00:00 -- Endpoint: call adapter [Facebook] loginBegin()
+INFO -- 127.0.0.1 -- 2016-02-04T06:04:55+00:00 -- Enter Hybrid_Auth::redirect( https://www.facebook.com/dialog/oauth?client_id=519839318158563&redirect_uri=http%3A%2F%2Ftientm.sdev.local%2Fphalcon%2F%2Flogin%2Findex%2Ffacebook%3Fhauth.done%3DFacebook&state=13a692fbe16cf09375b16115697bdbe8&sdk=php-sdk-3.2.3&scope=email%2C+user_about_me%2C+user_birthday%2C+user_hometown%2C+user_location%2C+user_website%2C+publish_actions%2C+read_custom_friendlists&display=page, PHP )
+INFO -- 127.0.0.1 -- 2016-02-04T06:05:30+00:00 -- Enter Hybrid_Auth::initialize()
+INFO -- 127.0.0.1 -- 2016-02-04T06:05:30+00:00 -- Hybrid_Auth::initialize(). PHP version: 5.6.15
+INFO -- 127.0.0.1 -- 2016-02-04T06:05:30+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth version: 2.6.0
+INFO -- 127.0.0.1 -- 2016-02-04T06:05:30+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth called from: http://tientm.sdev.local/phalcon//login/index/facebook?hauth.done=Facebook&code=AQBr3YR3aA3ZtZuJAwfypIDSyxctBpcFTCqkJZRV4AWSNEcFlWTaqvwKj9N9AAkZVxC2s7dohl_OUtXmirOw1vZvoO3y9h-XnxVCnusr0QEI8aM1Hzty1xMuY58c1P3QpLZBjq5yRw6fx807olXhTtAlTO-pSXKHmOs2Uv6DzxBTQYJSORprx2MGNbT0mlWE-fzUNoJiz1D2qaemlEKfnS1mI14HV4OaYZWbw_yunmFAOD2kc26tBFIaEuyVdsnDrHNC8fBByzJ_pZkZXy-yFFIf7xhlgOgz4F1S0WBb8BC2G0G1IsaZjliJNPrT82ALpVdCUWq3qOhLRfhquetOVHzJ&state=13a692fbe16cf09375b16115697bdbe8
+INFO -- 127.0.0.1 -- 2016-02-04T06:05:30+00:00 -- Hybrid_Auth initialize: check if any error is stored on the endpoint...
+INFO -- 127.0.0.1 -- 2016-02-04T06:05:30+00:00 -- Hybrid_Auth initialize: no error found. initialization succeed.
+INFO -- 127.0.0.1 -- 2016-02-04T06:05:30+00:00 -- Enter Hybrid_Auth::initialize()
+INFO -- 127.0.0.1 -- 2016-02-04T06:05:30+00:00 -- Hybrid_Auth::initialize(). PHP version: 5.6.15
+INFO -- 127.0.0.1 -- 2016-02-04T06:05:30+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth version: 2.6.0
+INFO -- 127.0.0.1 -- 2016-02-04T06:05:30+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth called from: http://tientm.sdev.local/phalcon//login/index/facebook?hauth.done=Facebook&code=AQBr3YR3aA3ZtZuJAwfypIDSyxctBpcFTCqkJZRV4AWSNEcFlWTaqvwKj9N9AAkZVxC2s7dohl_OUtXmirOw1vZvoO3y9h-XnxVCnusr0QEI8aM1Hzty1xMuY58c1P3QpLZBjq5yRw6fx807olXhTtAlTO-pSXKHmOs2Uv6DzxBTQYJSORprx2MGNbT0mlWE-fzUNoJiz1D2qaemlEKfnS1mI14HV4OaYZWbw_yunmFAOD2kc26tBFIaEuyVdsnDrHNC8fBByzJ_pZkZXy-yFFIf7xhlgOgz4F1S0WBb8BC2G0G1IsaZjliJNPrT82ALpVdCUWq3qOhLRfhquetOVHzJ&state=13a692fbe16cf09375b16115697bdbe8
+INFO -- 127.0.0.1 -- 2016-02-04T06:05:30+00:00 -- Hybrid_Auth initialize: check if any error is stored on the endpoint...
+INFO -- 127.0.0.1 -- 2016-02-04T06:05:30+00:00 -- Hybrid_Auth initialize: no error found. initialization succeed.
+INFO -- 127.0.0.1 -- 2016-02-04T06:05:30+00:00 -- Enter Hybrid_Provider_Adapter::factory( Facebook )
+INFO -- 127.0.0.1 -- 2016-02-04T06:05:33+00:00 -- Endpoint: call adapter [Facebook] loginFinish() 
+INFO -- 127.0.0.1 -- 2016-02-04T06:05:33+00:00 -- Enter [Facebook]::setUserConnected()
+INFO -- 127.0.0.1 -- 2016-02-04T06:05:33+00:00 -- Endpoint: job done. return to callback url.
+INFO -- 127.0.0.1 -- 2016-02-04T06:05:33+00:00 -- Enter Hybrid_Auth::redirect( http://tientm.sdev.local/phalcon/login/index/facebook, PHP )
+INFO -- 127.0.0.1 -- 2016-02-04T06:05:33+00:00 -- Enter Hybrid_Auth::initialize()
+INFO -- 127.0.0.1 -- 2016-02-04T06:05:33+00:00 -- Hybrid_Auth::initialize(). PHP version: 5.6.15
+INFO -- 127.0.0.1 -- 2016-02-04T06:05:33+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth version: 2.6.0
+INFO -- 127.0.0.1 -- 2016-02-04T06:05:33+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth called from: http://tientm.sdev.local/phalcon/login/index/facebook
+INFO -- 127.0.0.1 -- 2016-02-04T06:05:33+00:00 -- Hybrid_Auth initialize: check if any error is stored on the endpoint...
+INFO -- 127.0.0.1 -- 2016-02-04T06:05:33+00:00 -- Hybrid_Auth initialize: no error found. initialization succeed.
+INFO -- 127.0.0.1 -- 2016-02-04T06:05:33+00:00 -- Enter Hybrid_Auth::authenticate( Facebook )
+INFO -- 127.0.0.1 -- 2016-02-04T06:05:33+00:00 -- Hybrid_Auth::authenticate( Facebook ), User is already connected to this provider. Return the adapter instance.
+INFO -- 127.0.0.1 -- 2016-02-04T06:05:33+00:00 -- Enter Hybrid_Auth::getAdapter( Facebook )
+INFO -- 127.0.0.1 -- 2016-02-04T06:05:33+00:00 -- Hybrid_Auth::setup( Facebook ), no stored params found for this provider. Initialize a new one for new session
+INFO -- 127.0.0.1 -- 2016-02-04T06:05:33+00:00 -- Enter Hybrid_Provider_Adapter::factory( Facebook )
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:17+00:00 -- Enter Hybrid_Auth::initialize()
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:17+00:00 -- Hybrid_Auth::initialize(). PHP version: 5.6.15
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:17+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth version: 2.6.0
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:17+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth called from: http://tientm.sdev.local/phalcon//login/index/facebook?hauth.done=Facebook&code=AQBznAdjDLkyph-sPNiTWGt6p368VDztkxBweZsgrSqWX0hMBuKif1NcaZOh805hqpKuN2T8CcJK4cXZpV-Tr1zh_XwKAzg6tIqbsKufg42ASMtHRCNJsUrwgE5K_u2-xIlqOZdkhO8Tk93pybdZaHwjUrfntNkLLPk_WolB6rOhXudc64ptXin_acdpslH5UeT3O9kJwpjt7_VgrD4SpROBOdc_89eSgryunFX6MaSbKO7hn2SwJLUD6sD7pYjeI0Q4Ny_iLjUqB8v56GUjGWK5yxg1IQptidPmzatzWm50-eort9iIna10aNGoBLkhmVB6lBcFnx5Pi4rs1ynFFYJT&state=13a692fbe16cf09375b16115697bdbe8
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:17+00:00 -- Hybrid_Auth initialize: check if any error is stored on the endpoint...
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:17+00:00 -- Hybrid_Auth initialize: no error found. initialization succeed.
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:17+00:00 -- Enter Hybrid_Auth::initialize()
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:17+00:00 -- Hybrid_Auth::initialize(). PHP version: 5.6.15
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:17+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth version: 2.6.0
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:17+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth called from: http://tientm.sdev.local/phalcon//login/index/facebook?hauth.done=Facebook&code=AQBznAdjDLkyph-sPNiTWGt6p368VDztkxBweZsgrSqWX0hMBuKif1NcaZOh805hqpKuN2T8CcJK4cXZpV-Tr1zh_XwKAzg6tIqbsKufg42ASMtHRCNJsUrwgE5K_u2-xIlqOZdkhO8Tk93pybdZaHwjUrfntNkLLPk_WolB6rOhXudc64ptXin_acdpslH5UeT3O9kJwpjt7_VgrD4SpROBOdc_89eSgryunFX6MaSbKO7hn2SwJLUD6sD7pYjeI0Q4Ny_iLjUqB8v56GUjGWK5yxg1IQptidPmzatzWm50-eort9iIna10aNGoBLkhmVB6lBcFnx5Pi4rs1ynFFYJT&state=13a692fbe16cf09375b16115697bdbe8
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:17+00:00 -- Hybrid_Auth initialize: check if any error is stored on the endpoint...
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:17+00:00 -- Hybrid_Auth initialize: no error found. initialization succeed.
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:17+00:00 -- Hybrid_Auth::setup( Facebook ), no stored params found for this provider. Initialize a new one for new session
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:17+00:00 -- Enter Hybrid_Provider_Adapter::factory( Facebook )
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:21+00:00 -- Endpoint: call adapter [Facebook] loginFinish() 
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:21+00:00 -- Enter [Facebook]::setUserConnected()
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:21+00:00 -- Endpoint: job done. return to callback url.
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:21+00:00 -- Enter Hybrid_Auth::redirect( , PHP )
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:24+00:00 -- Enter Hybrid_Auth::initialize()
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:24+00:00 -- Hybrid_Auth::initialize(). PHP version: 5.6.15
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:24+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth version: 2.6.0
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:24+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth called from: http://tientm.sdev.local/phalcon/login/index/twitter
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:24+00:00 -- Hybrid_Auth initialize: check if any error is stored on the endpoint...
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:24+00:00 -- Hybrid_Auth initialize: no error found. initialization succeed.
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:24+00:00 -- Enter Hybrid_Auth::authenticate( Twitter )
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:24+00:00 -- Hybrid_Auth::authenticate( Twitter ), User not connected to the provider. Try to authenticate..
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:24+00:00 -- Hybrid_Auth::setup( Twitter ), no stored params found for this provider. Initialize a new one for new session
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:24+00:00 -- Enter Hybrid_Provider_Adapter::factory( Twitter )
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:24+00:00 -- Enter Hybrid_Provider_Adapter::login( Twitter ) 
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:24+00:00 -- Enter [Twitter]::logout()
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:24+00:00 -- Enter Hybrid_Auth::redirect( http://tientm.sdev.local/phalcon//login/index/twitter?hauth.start=Twitter&hauth.time=1454566104, PHP )
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:24+00:00 -- Enter Hybrid_Auth::initialize()
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:24+00:00 -- Hybrid_Auth::initialize(). PHP version: 5.6.15
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:24+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth version: 2.6.0
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:24+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth called from: http://tientm.sdev.local/phalcon//login/index/twitter?hauth.start=Twitter&hauth.time=1454566104
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:24+00:00 -- Hybrid_Auth initialize: check if any error is stored on the endpoint...
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:24+00:00 -- Hybrid_Auth initialize: no error found. initialization succeed.
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:24+00:00 -- Enter Hybrid_Auth::initialize()
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:24+00:00 -- Hybrid_Auth::initialize(). PHP version: 5.6.15
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:24+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth version: 2.6.0
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:24+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth called from: http://tientm.sdev.local/phalcon//login/index/twitter?hauth.start=Twitter&hauth.time=1454566104
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:24+00:00 -- Hybrid_Auth initialize: check if any error is stored on the endpoint...
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:24+00:00 -- Hybrid_Auth initialize: no error found. initialization succeed.
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:24+00:00 -- Enter Hybrid_Provider_Adapter::factory( Twitter )
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:24+00:00 -- Endpoint: call adapter [Twitter] loginBegin()
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:24+00:00 -- Enter OAuth1Client::request( GET, https://api.twitter.com/oauth/request_token?oauth_callback=http%3A%2F%2Ftientm.sdev.local%2Fphalcon%2F%2Flogin%2Findex%2Ftwitter%3Fhauth.done%3DTwitter&oauth_consumer_key=P2jMTnLezgImXItXUwpoxtVj1&oauth_nonce=da9b4599bcf6fce191f9c9ed2bbb171f&oauth_signature=IVak2Q6NCGygBgUXij9CAEUsbDs%3D&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1454566104&oauth_version=1.0 )
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:25+00:00 -- Enter Hybrid_Auth::redirect( https://api.twitter.com/oauth/authenticate?oauth_token=N048FgAAAAAAkM-7AAABUqrlX88, PHP )
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:35+00:00 -- Enter Hybrid_Auth::initialize()
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:35+00:00 -- Hybrid_Auth::initialize(). PHP version: 5.6.15
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:35+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth version: 2.6.0
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:35+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth called from: http://tientm.sdev.local/phalcon//login/index/twitter?hauth.done=Twitter&oauth_token=N048FgAAAAAAkM-7AAABUqrlX88&oauth_verifier=QdcwVGC1icNLsdOdb3hrERp7BTfuPxiZ
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:35+00:00 -- Hybrid_Auth initialize: check if any error is stored on the endpoint...
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:35+00:00 -- Hybrid_Auth initialize: no error found. initialization succeed.
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:35+00:00 -- Enter Hybrid_Auth::initialize()
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:35+00:00 -- Hybrid_Auth::initialize(). PHP version: 5.6.15
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:35+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth version: 2.6.0
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:35+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth called from: http://tientm.sdev.local/phalcon//login/index/twitter?hauth.done=Twitter&oauth_token=N048FgAAAAAAkM-7AAABUqrlX88&oauth_verifier=QdcwVGC1icNLsdOdb3hrERp7BTfuPxiZ
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:35+00:00 -- Hybrid_Auth initialize: check if any error is stored on the endpoint...
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:35+00:00 -- Hybrid_Auth initialize: no error found. initialization succeed.
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:35+00:00 -- Enter Hybrid_Provider_Adapter::factory( Twitter )
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:35+00:00 -- Endpoint: call adapter [Twitter] loginFinish() 
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:35+00:00 -- Enter OAuth1Client::request( GET, https://api.twitter.com/oauth/access_token?oauth_consumer_key=P2jMTnLezgImXItXUwpoxtVj1&oauth_nonce=75c4a882429dd16f813d7b0ff21e47d0&oauth_signature=iS7Rw%2FeBBsfKgBr9t3g52MvlRx8%3D&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1454566115&oauth_token=N048FgAAAAAAkM-7AAABUqrlX88&oauth_verifier=QdcwVGC1icNLsdOdb3hrERp7BTfuPxiZ&oauth_version=1.0 )
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:38+00:00 -- Enter [Twitter]::setUserConnected()
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:38+00:00 -- Endpoint: job done. return to callback url.
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:38+00:00 -- Enter Hybrid_Auth::redirect( http://tientm.sdev.local/phalcon/login/index/twitter, PHP )
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:38+00:00 -- Enter Hybrid_Auth::initialize()
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:38+00:00 -- Hybrid_Auth::initialize(). PHP version: 5.6.15
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:38+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth version: 2.6.0
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:38+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth called from: http://tientm.sdev.local/phalcon/login/index/twitter
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:38+00:00 -- Hybrid_Auth initialize: check if any error is stored on the endpoint...
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:38+00:00 -- Hybrid_Auth initialize: no error found. initialization succeed.
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:38+00:00 -- Enter Hybrid_Auth::authenticate( Twitter )
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:38+00:00 -- Hybrid_Auth::authenticate( Twitter ), User is already connected to this provider. Return the adapter instance.
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:38+00:00 -- Enter Hybrid_Auth::getAdapter( Twitter )
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:38+00:00 -- Hybrid_Auth::setup( Twitter ), no stored params found for this provider. Initialize a new one for new session
+INFO -- 127.0.0.1 -- 2016-02-04T06:08:38+00:00 -- Enter Hybrid_Provider_Adapter::factory( Twitter )
+INFO -- 127.0.0.1 -- 2016-02-04T06:39:04+00:00 -- Enter Hybrid_Auth::initialize()
+INFO -- 127.0.0.1 -- 2016-02-04T06:39:04+00:00 -- Hybrid_Auth::initialize(). PHP version: 5.6.15
+INFO -- 127.0.0.1 -- 2016-02-04T06:39:04+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth version: 2.6.0
+INFO -- 127.0.0.1 -- 2016-02-04T06:39:04+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth called from: http://tientm.sdev.local/phalcon/login/index/facebook
+INFO -- 127.0.0.1 -- 2016-02-04T06:39:04+00:00 -- Hybrid_Auth initialize: check if any error is stored on the endpoint...
+INFO -- 127.0.0.1 -- 2016-02-04T06:39:04+00:00 -- Hybrid_Auth initialize: no error found. initialization succeed.
+INFO -- 127.0.0.1 -- 2016-02-04T06:39:04+00:00 -- Enter Hybrid_Auth::authenticate( Facebook )
+INFO -- 127.0.0.1 -- 2016-02-04T06:39:04+00:00 -- Hybrid_Auth::authenticate( Facebook ), User is already connected to this provider. Return the adapter instance.
+INFO -- 127.0.0.1 -- 2016-02-04T06:39:04+00:00 -- Enter Hybrid_Auth::getAdapter( Facebook )
+INFO -- 127.0.0.1 -- 2016-02-04T06:39:04+00:00 -- Hybrid_Auth::setup( Facebook ), no stored params found for this provider. Initialize a new one for new session
+INFO -- 127.0.0.1 -- 2016-02-04T06:39:04+00:00 -- Enter Hybrid_Provider_Adapter::factory( Facebook )
